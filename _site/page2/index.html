@@ -99,6 +99,9 @@
 
 
 
+  <meta property="fb:admins" content="<user_id>" />
+  <meta property="fb:app_id" content="<app_id>" />
+
 
 
 
@@ -156,6 +159,24 @@
 
   <title>Dan Li's Blog</title>
   
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '<app_id>',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
 
 
 
@@ -417,6 +438,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/test/test/2013/12/24/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="http://localhost:4000/test/test/2013/12/24/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
+            
           
 
           
@@ -580,6 +611,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/foo/2013/12/24/long-title/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="http://localhost:4000/foo/2013/12/24/long-title/" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
             
           
 
@@ -768,6 +809,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/foo/bar/baz/2013/12/24/categories/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="http://localhost:4000/foo/bar/baz/2013/12/24/categories/" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
+            
           
 
           
@@ -929,6 +980,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/foo/2013/12/24/link-post/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="http://localhost:4000/foo/2013/12/24/link-post/" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
             
           
 
@@ -1093,6 +1154,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/foo/2013/12/24/tags/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="http://localhost:4000/foo/2013/12/24/tags/" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
+            
           
 
           
@@ -1255,6 +1326,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/foo/2013/12/24/elements/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="http://localhost:4000/foo/2013/12/24/elements/" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
             
           
 
@@ -2151,6 +2232,21 @@
 
 
   
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
   

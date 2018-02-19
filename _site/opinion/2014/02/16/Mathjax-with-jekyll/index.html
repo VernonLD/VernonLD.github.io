@@ -99,6 +99,9 @@
 
 
 
+  <meta property="fb:admins" content="<user_id>" />
+  <meta property="fb:app_id" content="<app_id>" />
+
 
 
 
@@ -158,6 +161,24 @@
 
   <title>MathJax with Jekyll | Dan Li's Blog</title>
   
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '<app_id>',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
 
 
 
@@ -411,6 +432,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/opinion/2014/02/16/Mathjax-with-jekyll/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="http://localhost:4000/opinion/2014/02/16/Mathjax-with-jekyll/" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
+            
           
 
           
@@ -572,6 +603,22 @@ underscores with a backslash like so <code class="highlighter-rouge">\mathbf{X}\
       
       
       
+        <div class="post-widgets">
+        
+
+        
+          <div class="social-like">
+            
+
+            
+              <div class="fb_like">
+                <div class="fb-like" data-layout="button_count" data-share="true"></div>
+              </div>
+            
+          </div>
+        
+        </div>
+      
       
 
       
@@ -614,6 +661,13 @@ underscores with a backslash like so <code class="highlighter-rouge">\mathbf{X}\
 
           
   <div class="comments" id="comments">
+    
+      <div class="fb-comments"
+           data-href="http://localhost:4000/opinion/2014/02/16/Mathjax-with-jekyll/"
+           data-numposts="10"
+           data-width="100%"
+           data-colorscheme="light">
+      </div>
     
   </div>
 
@@ -1455,6 +1509,21 @@ underscores with a backslash like so <code class="highlighter-rouge">\mathbf{X}\
 
 
   
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
   
