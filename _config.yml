@@ -192,8 +192,8 @@ font:
   # The `size` option use `px` as unit
   logo:
     external: true
-    family:
-    size:
+    family: Lato
+    size: 24
 
   # Font settings for <code> and code blocks.
   codes:
